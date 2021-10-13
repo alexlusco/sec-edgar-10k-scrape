@@ -1,7 +1,7 @@
 # This script provides an rvest / tidyverse solution to obtaining 10-k reports from the SEC's EDGAR database.
 # Note however there are already (better) tools available doing this, including Micah J Waldstein's R library
 # edgarWebR (https://cran.r-project.org/web/packages/edgarWebR/index.html). These tools come with the added
-# advantage of easy access to company metadata. Whether using this solution of something like edgarWebR
+# advantage of easy access to company metadata. Whether using this solution or something like edgarWebR
 # you will have to respect the SEC's rules for automated access: (1) no more than 10 requests per second
 # and (2) you must provide your user-agent information.
 
