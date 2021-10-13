@@ -7,7 +7,7 @@
 
 # you'll need to install pacman first if you don't have it already
 #install.packages("pacman")
-pacman::p_load(tibble, rvest, dplyr, stringr, reader)
+pacman::p_load(tibble, rvest, dplyr, stringr, readr)
 
 # here I'm just building a df from sample URLs (some machine readable, some not)
 page_urls <- tribble(~url,
