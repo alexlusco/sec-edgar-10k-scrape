@@ -49,10 +49,10 @@ for (p in page_urls$url){
     page_text = page_text,
     page_img_url = page_img_urls
   ) %>%
-    # note that sometimes there are links to .jpgs, but its not the text, it's just like an image like this 
+    # note that sometimes there are links to .jpgs, but its not the text, it's just an image like this 
     # https://www.sec.gov/Archives/edgar/data/1091748/000095012321010456/g340796g0811194346929.jpg;
     # in these cases, we'll call these "both" in the text_or_img column, but only the ones tagged "image"
-    # lack the text you're after, and those are the URLs you'll have to target in another script. The
+    # lack the text we're after, and those are the URLs we'll have to target in another script. The
     # other script should download the .jpgs in the page_img_url column and then OCR them
     mutate(page_text_length = str_count(page_text)) %>%
     # note that the above function (str_count) is counting periods, commas, etc. not just words
